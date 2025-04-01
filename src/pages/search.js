@@ -1,6 +1,5 @@
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
-
 import  './search.css'
 
 const SearchCars = () =>{

@@ -1,0 +1,124 @@
+.contianerBox {
+  max-width: 80%;
+  margin: 150px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.subTitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.textInput {
+  margin-bottom: 15px;
+}
+.textInput2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.textBox1 {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.textBox2 {
+  width: 290px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.submitBtn {
+  width: 300px;
+  background-color: #2866a5;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitBtn:hover {
+  background-color: #b1d5fc;
+  color: rgb(15, 13, 13);
+}
+
+.submitBtn:active {
+  transform: scale(0.95);
+}
+
+.submitBtn:disabled {
+  background-color: rgb(202, 145, 145);
+  cursor: not-allowed;
+}
+
+.gmailBtn {
+  width: 300px;
+  background-color: #ebf0f5;
+  color: rgb(121, 113, 113);
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.gmailBtn:hover {
+  background-color: #b1d5fc;
+  color: rgb(15, 13, 13);
+}
+
+.gmailBtn:active {
+  transform: scale(0.95);
+}
+
+.gmailBtn:disabled {
+  background-color: rgb(202, 145, 145);
+  cursor: not-allowed;
+}
+.confirmation {
+  color: rgb(121, 117, 117);
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.gmailBtn {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding: 10px;
+  background-color: #ebf0f5;
+  color: rgb(19, 18, 18);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
