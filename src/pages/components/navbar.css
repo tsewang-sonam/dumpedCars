@@ -1,0 +1,90 @@
+.nav {
+  background-color: bisque;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.btnList {
+  width: 90%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70px;
+  margin: 0;
+}
+.list {
+  height: 50px;
+}
+
+.a-link {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.a-link:hover {
+  background-color: seashell;
+}
+.list:first-child {
+  margin-right: auto;
+}
+
+.Sidebtnlist {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 200px;
+  z-index: 999;
+  background-color: rgba(253, 250, 250, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 60px;
+}
+.Sidebtnlist.hide {
+  display: none;
+}
+
+.Sidebtnlist.show {
+  display: flex;
+}
+
+.Sidelist {
+  list-style: none;
+  margin: 15px 0;
+}
+
+.Side-a-link {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.Side-a-link:hover {
+  background-color: #f1f1f1; /* Change background color on hover */
+}
+.menu {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .Sidebtnlist {
+    width: 100%;
+    align-items: center;
+  }
+}
