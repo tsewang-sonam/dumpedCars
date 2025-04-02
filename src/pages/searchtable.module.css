@@ -1,0 +1,70 @@
+.tableContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.reportTable {
+  width: 90%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.carImage {
+  width: 150;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.reportTable thead {
+  background: #f4f4f4;
+  text-transform: uppercase;
+  text-align: center;
+}
+.reportTable th,
+.reportTable td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.reportTable tbody tr:hover {
+  background: #b9b6b6;
+  transition: 0.3s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .reportTable th,
+  .reportTable td {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .carImage {
+    width: 80;
+    height: auto;
+  }
+}
+@media (max-width: 470px) {
+  .reportTable th,
+  .reportTable td {
+    padding: 10px;
+    font-size: 8px;
+  }
+  .carImage {
+    width: 40;
+    height: auto;
+  }
+  .reportTable thead {
+    font-size: 8px;
+  }
+}
+
+/* Add hover effect */
+.clickableRow:hover {
+  background: #f0f0f0;
+}
