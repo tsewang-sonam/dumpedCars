@@ -27,7 +27,7 @@
   margin-bottom: 40px;
 }
 .aDimage {
-  width: 250px;
+  width: 350px;
   height: auto;
   border-radius: 10px;
 }
@@ -52,6 +52,9 @@
   .aDsubtitle {
     font-size: 1rem;
     color: rgb(202, 223, 21);
+  }
+  .aDimage {
+    width: 250px;
   }
 }
 
@@ -94,7 +97,7 @@
   flex-wrap: wrap;
 }
 .howBox {
-  background-color: cadetblue;
+  background-color: rgb(166, 176, 177);
   max-width: 750px;
   flex: 1;
   text-align: center;

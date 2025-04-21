@@ -1,6 +1,7 @@
 import Navbar from './components/navbar'
 import Footer from './components/footer'
 import styles from './index.module.css';
+import 'leaflet/dist/leaflet.css';
 
 
 const HomePage = () => {
@@ -9,13 +10,12 @@ const HomePage = () => {
     <div >
       <Navbar />
       <div className={`${styles.aDcontainer} ${styles.index}`}>
-      {/* <div className = "aDcontainer"  className ={styles.index}> */}
         <div className= {styles.aDtextBox}>
           <h1 className= {styles.aDtitle} >Welcome to DumpedCars</h1>
           <p className= {styles.aDsubtitle}>Search, Report, and Track lost or abandoned vehicles easily.Search, Report, and Track lost or abandoned vehicles eSearch, Report, and Track lost or abandoned vehicles eSearch, Report, and Track lost or abandoned vehicles easily.asily.asily.</p>
           <button className = {styles.aDbutton}> On AppStore</button>
         </div>
-        <img className= {styles.aDimage}  src="/B1.png" alt="Car Image"  />
+        <img className= {styles.aDimage}  src="/logoNew.svg" alt="Car Image"  />
       </div>
 
       <div className={styles.howToContainer}>

@@ -1,15 +1,45 @@
 .contianerBox {
-  max-width: 80%;
-  margin: 150px auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  max-width: 600px;
   padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(242, 245, 242);
+  z-index: 999;
+  width: 500px;
+  height: 600px;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(51, 51, 50, 0.692);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  color: rgb(6, 7, 7);
+  font-size: 30px;
+  font-weight: lighter;
+  cursor: pointer;
+  z-index: 999;
+}
 .inputBox {
   display: flex;
   flex-direction: column;
@@ -23,7 +53,7 @@
   margin-bottom: 10px;
 }
 .subTitle {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 20px;
 }
 .textInput {
@@ -45,6 +75,7 @@
   width: 290px;
   margin-bottom: 10px;
   padding: 5px;
+  height: 30px;
 }
 .submitBtn {
   width: 300px;
@@ -121,4 +152,10 @@
   cursor: pointer;
   height: 50px;
   transition: background-color 0.3s ease, transform 0.2s ease;
+}
+@media (max-width: 520px) {
+  .contianerBox {
+    width: 300px;
+    height: auto;
+  }
 }

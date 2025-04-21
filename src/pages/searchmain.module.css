@@ -1,0 +1,73 @@
+.mainContianer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  margin: 0rem;
+  width: 90%;
+}
+.smContianer {
+  flex: 1;
+  max-width: 700px;
+  background-color: rgb(229, 234, 235);
+  border-radius: 20px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.descContianer {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(187, 214, 224);
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+}
+.mapContianer {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(87, 168, 200, 0.781);
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.carImage {
+  width: 500px;
+  height: auto;
+  border-radius: 30px;
+}
+.Contianer {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 1400px) {
+  .mainContianer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .smContianer,
+  .Contianer {
+    max-width: 100%;
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .mapContianer {
+    height: 200px; /* slightly shorter for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .mapContianer {
+    height: 180px; /* even shorter on phones */
+  }
+}

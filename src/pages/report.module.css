@@ -1,0 +1,340 @@
+.mainReport {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  padding: 20px;
+  overflow-x: auto;
+  width: 100%;
+  margin-top: 70px;
+}
+.imgUpload {
+  width: 600px;
+  height: 600px;
+  flex-shrink: 0;
+  background-color: rgba(219, 216, 209, 0.692);
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  border: 2px solid rgb(136, 134, 134);
+}
+.locationContianer {
+  width: 600px;
+  height: 600px;
+  flex-shrink: 0;
+  background-color: rgba(219, 216, 209, 0.692);
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(136, 134, 134);
+}
+.infoContianer {
+  width: 600px;
+  height: 600px;
+  flex-shrink: 0;
+  background-color: rgba(219, 216, 209, 0.692);
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(136, 134, 134);
+}
+
+.title {
+  background-color: rgb(250, 248, 246);
+  font-size: 25px;
+  text-align: center;
+  border-radius: 20px 0;
+  padding: 20px;
+  position: absolute; /* Position it absolutely */
+  top: 0; /* Align it at the top */
+  left: 0; /* Align it to the left */
+  z-index: 10; /* Ensure it's above other content */
+  margin: 0;
+}
+.SubmitContianer {
+  width: 200px;
+  height: 600px;
+  flex-shrink: 0;
+  padding: 20px;
+  margin-right: 150px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.previewContainer {
+  flex: 1; /* Take remaining space below Dashboard */
+  overflow-y: auto; /* Scroll if content exceeds height */
+  width: 100%; /* Full width of container */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 330px; /* Adjust based on Dashboard height + padding */
+}
+
+.previewItem {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.previewImage {
+  max-width: 100%; /* Fit within container width */
+  max-height: 200px; /* Limit height per image */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+.submitBtn {
+  padding: 24px 36px; /* Comfortable size */
+  font-size: 35px; /* Readable text */
+  font-weight: 500; /* Slightly bold for emphasis */
+  background-color: #88898b; /* Soft blue, not too bright */
+  color: #ffffff; /* White text for contrast */
+  border: none; /* No border for a clean look */
+  border-radius: 20px; /* Subtle rounding */
+  cursor: pointer; /* Hand on hover */
+  transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transitions */
+}
+.btn {
+  margin-top: 15px;
+  padding: 12px 24px; /* Comfortable size */
+  font-size: 25px; /* Readable text */
+  font-weight: 500; /* Slightly bold for emphasis */
+  background-color: #88898b; /* Soft blue, not too bright */
+  color: #ffffff; /* White text for contrast */
+  border: none; /* No border for a clean look */
+  border-radius: 20px; /* Subtle rounding */
+  cursor: pointer; /* Hand on hover */
+  transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transitions */
+}
+
+.submitBtn:hover {
+  background-color: #060607; /* Darker blue on hover */
+}
+
+.submitBtn:active {
+  transform: scale(0.98); /* Slight press effect */
+}
+
+.submitBtn:disabled {
+  background-color: #a0c4ff; /* Light blue when disabled */
+}
+
+.inputField {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 16px;
+  font-size: 14px;
+  border: 2px solid rgb(136, 133, 133);
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* spacing between inputs */
+}
+
+.cinputField:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+.inputField::placeholder {
+  color: #aaa;
+}
+.inputgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* spacing between inputs */
+  max-width: 400px;
+  padding: 10px;
+  align-items: center;
+}
+.sliderValue {
+  margin-top: 1px;
+  font-size: 18px;
+  color: #333; /* Dark gray for readability */
+}
+
+@media (max-width: 800px) {
+  .mainReport {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .imgUpload {
+    margin-left: 0px;
+  }
+
+  .SubmitContianer {
+    height: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .scrollArrow {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .uppyContainer {
+    margin-top: 60px;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .mainReport {
+    align-items: center;
+  }
+  .imgUpload {
+    width: 380px;
+    height: auto;
+  }
+  .infoContianer {
+    width: 380px;
+    height: auto;
+  }
+  .locationContianer {
+    width: 380px;
+    height: auto;
+  }
+  .SubmitContianer {
+    width: 100%;
+    margin-right: auto;
+    height: auto;
+  }
+  .inputgroup {
+    margin-top: 50px;
+  }
+  .scrollArrow {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .uppyContainer {
+    margin-top: 60px;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .mainReport {
+    align-items: center;
+  }
+  .imgUpload {
+    width: 280px;
+    height: auto;
+  }
+  .infoContianer {
+    width: 280px;
+    height: auto;
+  }
+  .locationContianer {
+    width: 280px;
+    height: auto;
+  }
+  .SubmitContianer {
+    width: 300px;
+    height: auto;
+    margin-right: 0px;
+    padding: 0px;
+  }
+  .inputgroup {
+    margin-top: 50px;
+  }
+  .scrollArrow {
+    display: none;
+  }
+}
+
+.uppyContainer {
+  width: 600px;
+  height: 500px;
+}
+
+.scrollArrow {
+  position: absolute;
+  right: 10px;
+  top: 13%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  font-family: sans-serif;
+  opacity: 0.7;
+  animation: blink 2s ease-in-out 1; /* 1s duration, 3 iterations */
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Hide the element after the animation completes */
+.scrollArrow {
+  animation-fill-mode: forwards; /* Keeps the final state */
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    visibility: hidden; /* or opacity: 0; display: none; */
+  }
+}
+
+.slider {
+  -webkit-appearance: none; /* Removes default styling */
+  width: 100%;
+  height: 4px;
+  background: rgb(248, 246, 246); /* Track background */
+  border-radius: 5px;
+  outline: black;
+  border: 1px solid black;
+}
+
+/* WebKit (Chrome, Safari) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: #7ef1b4; /* Thumb color */
+  border: 1px solid rgb(2, 126, 23);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 0px; /* Align thumb vertically */
+}
+
+/* Firefox */
+.slider::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  background: #ff6600;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Firefox track */
+.slider::-moz-range-track {
+  background: #ddd;
+  height: 6px;
+  border-radius: 5px;
+}
